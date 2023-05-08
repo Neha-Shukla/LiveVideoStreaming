@@ -1,8 +1,8 @@
 const express = require("express")
-const http = require("http")
+const https = require("https")
 const app = express()
 const cors = require("cors")
-const server = http.createServer(app)
+const server = https.createServer(app)
 app.use(cors({
     origin: "*"
 }))
